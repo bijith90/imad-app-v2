@@ -44,7 +44,7 @@ function htmlTemplate(data) {
                 </header>
                 <hr>
                 <div>
-                    <h1${heading}</h1>
+                    <h1>${heading}</h1>
                     ${content}
                 </div>
             </div>
