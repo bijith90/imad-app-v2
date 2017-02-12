@@ -7,7 +7,7 @@ button.onclick = function() {
     request.onreadyStateChange = function() {
         // alert('inside');
         if(request.readyState === XMLHttpRequest.DONE) {
-            alert('inside');
+            aconsole.log('readyState');
             if(request.status === 200) {
                 alert('inside');
                 var counter = request.responseText;
