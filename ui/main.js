@@ -9,7 +9,6 @@ button.onclick = function() {
             if(request.status === 200) {
                 var counter = request.responseText;
                 console.log(request.responseText);
-                
             }
         }
     };
