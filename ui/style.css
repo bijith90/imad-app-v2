@@ -38,3 +38,6 @@ body {
     -ms-box-shadow: 0 9px 64px;
     box-shadow: 0 9px 64px;
 }
+.footer {
+    border-top: 1px solid grey;
+}
