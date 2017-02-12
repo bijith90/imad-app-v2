@@ -60,6 +60,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+var counter = 1;
+app.get('/counter', function(){
+    counter = counter + 1;
+    res.send(counter);
+});
+
 app.get('/:articleName', function (req, res){
   var articleName = req.params.articleName;
   res.send(htmlTemplate(articles[articleName]));
