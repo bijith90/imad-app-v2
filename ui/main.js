@@ -3,7 +3,7 @@ var counter =  0;
 
 button.onclick = function() {
     // var request = new XMLHttpRequest();
-    alert('inside');
+    // alert('inside');
     
     counter = counter + 1;
     var span = document.getElementById('count');
