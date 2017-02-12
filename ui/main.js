@@ -4,7 +4,8 @@ button.onclick = function() {
     // Create a request object
     var request = new XMLHttpRequest();
     
-    request.onreadyStateChange = function() {alert('inside');
+    request.onreadyStateChange = function() {
+        alert('inside');
         if(request.readyState === XMLHttpRequest.DONE) {
             alert('inside');
             if(request.status === 200) {
