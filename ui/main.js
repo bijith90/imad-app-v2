@@ -4,7 +4,7 @@ button.onclick = function() {
     // Create a request object
     var request = new XMLHttpRequest();
     
-    request.onreadyStateChange = function() {
+    request.onreadyStateChange = function() {alert('inside');
         if(request.readyState === XMLHttpRequest.DONE) {
             alert('inside');
             if(request.status === 200) {
@@ -12,6 +12,7 @@ button.onclick = function() {
                 var counter = request.responseText;
                 alert(counter);
                 var span = document.getElementById('count');
+                alert('sasdasd')
                 span.innerHTML = counter.toString();
             }
         }
