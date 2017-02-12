@@ -2,20 +2,20 @@ var button = document.getElementById('counter');
 
 button.onclick = function() {
     // Create a request object
-    var xhr = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
 
-    xhr.onreadyStateChange = function() {
-        if(xhr.readyState === XMLHttpRequest.DONE) {
-            if(xhr.status === 200) {
-                var counter = xhr.responseText;
-                console.log(xhr.responseText);
+    request.onreadyStateChange = function() {
+        if(request.readyState === XMLHttpRequest.DONE) {
+            if(request.status === 200) {
+                var counter = request.responseText;
+                console.log(request.responseText);
                 
             }
         }
     }
     
     // Make a request
-    xhr.open("GET", "http://bijith90.imad.hasura-app.io/counter", true);
-    xhr.send(null);
+    request.open("GET", "http://bijith90.imad.hasura-app.io/counter", true);
+    request.send(null);
     
 };
