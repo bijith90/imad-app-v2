@@ -8,6 +8,7 @@ button.onclick = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
             alert('inside');
             if(request.status === 200) {
+                alert('inside');
                 var counter = request.responseText;
                 alert(counter);
                 var span = document.getElementById('count');
